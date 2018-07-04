@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="ToolBarStyle" parent="@style/BaseToolBarStyle">
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+</resources>

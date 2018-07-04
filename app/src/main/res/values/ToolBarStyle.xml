@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BaseToolBarStyle" parent="@style/ThemeOverlay.AppCompat">
+        <!--系统图标颜色-->
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:actionOverflowMenuStyle">@style/overflowMenuStyle</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="overflowMenuStyle" parent="@style/Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:dropDownWidth">wrap_content</item>
+        <item name="overlapAnchor">false</item>
+        <item name="android:popupBackground">@color/white</item>
+        <item name="android:dropDownVerticalOffset">-4dp</item>
+        <item name="android:dropDownHorizontalOffset">0dp</item>
+    </style>
+</resources>

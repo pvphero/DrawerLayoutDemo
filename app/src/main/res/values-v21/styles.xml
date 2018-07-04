@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:fitsSystemWindows" >true</item>
+        <item name="android:statusBarColor">@color/_0091ea</item>
+    </style>
+
+    <style name="ToolBarStyle" parent="@style/BaseToolBarStyle">
+        <item name="android:fitsSystemWindows">false</item>
+    </style>
+</resources>
