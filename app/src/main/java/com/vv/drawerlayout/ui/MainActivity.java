@@ -32,12 +32,7 @@ public class MainActivity extends BaseActivity {
         mToggle.syncState();
         mDrawerLayout.addDrawerListener(mToggle);
         mNavigationView.setItemIconTintList(null);
-        mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                return false;
-            }
-        });
+        mNavigationView.setNavigationItemSelectedListener(onNavigationItemSelectedListener);
     }
 
     @Override
@@ -57,5 +52,26 @@ public class MainActivity extends BaseActivity {
         return true;
     }
 
+
+    NavigationView.OnNavigationItemSelectedListener onNavigationItemSelectedListener = new NavigationView.OnNavigationItemSelectedListener() {
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            switch (item.getItemId()) {
+                case R.id.menu_favorite_article:
+                    break;
+                case R.id.menu_about:
+                    break;
+                case R.id.menu_exit:
+                    break;
+                case R.id.menu_home:
+                    break;
+                default:
+                    break;
+            }
+            //关闭侧边栏
+            mDrawerLayout.closeDrawers();
+            return true;
+        }
+    };
 
 }

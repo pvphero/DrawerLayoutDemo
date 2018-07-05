@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
 
     <item
         android:id="@+id/menu_favorite_article"
         android:icon="@drawable/ic_favorite_gray_24dp"
         android:title="@string/favorite_article"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="ifRoom"
+        app:itemIconTint="@color/_0091ea"/>
     <item
         android:id="@+id/menu_about"
         android:icon="@drawable/ic_about_us_gray_24dp"
@@ -19,4 +21,16 @@
         app:showAsAction="ifRoom"
         />
 
+    <group
+        android:id="@+id/group_home"
+        android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/menu_home"
+            android:icon="@mipmap/ic_launcher_round"
+
+            android:title="@string/home">
+
+        </item>
+    </group>
 </menu>

@@ -13,7 +13,8 @@
         android:id="@+id/navigation_view"
         android:layout_gravity="left|start"
         app:headerLayout="@layout/header_layout"
-        app:menu="@menu/navigation_menu">
+        app:menu="@menu/navigation_menu"
+        app:itemIconTint="@color/_0091ea">
 
     </android.support.design.widget.NavigationView>
 
