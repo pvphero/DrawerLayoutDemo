@@ -1,14 +1,6 @@
-
-<style>
-img{
-    width: 20%;
-    padding-left:  (100% - width) / 2;
-}
-</style>
-
 # 学习目的
 - 学会使用`DrawerLayout`
-- 学会使用`NavigationView`
+- 学会使用`NavigationView`  
 - 学会使用ToolBar+DrawerLayout+NavigationView实现侧滑抽屉效果
 - 学会实现Toolbar在顶部以及Toolbar被遮挡的两种效果
 
@@ -17,7 +9,7 @@ img{
 # 效果展示
 侧滑控件我们在开发的过程中经常用到,废话不多说,先上图:
 
-![](http://paynnyvep.bkt.clouddn.com/15308443818749.gif)
+![](http://paynnyvep.bkt.clouddn.com/15312917953318.gif)
 
 
 # 实现过程
@@ -57,7 +49,7 @@ img{
         </FrameLayout>
     </LinearLayout>
 
-</LinearLayout>
+</LinearLayout>  
 ```
 
 - `BaseActivity`
@@ -148,7 +140,7 @@ public abstract class BaseActivity extends AppCompatActivity {
 
 ## 创建DrawerLayout相关的Activity以及相关的XML文件
 
-- `activity_main.xml`
+- `activity_main.xml`  
 
 
 ```xml
@@ -328,13 +320,14 @@ public class MainActivity extends BaseActivity {
 
 但是现在我们发现侧边栏是没有选中状态的,如效果图所示,
 
-![](http://paynnyvep.bkt.clouddn.com/15307558160904.gif)
+
+![15307558160904_2](http://paynnyvep.bkt.clouddn.com/15307558160904_2.gif)
 
 我们怎么才能是左边的导航栏有选择状态呢?
 
 ## 给左边的导航栏加上选中效果
 
-* 首先在布局文件中,`NavigationView`的控件的`meun`中注明一个behavior
+* 首先在布局文件中,`NavigationView`的控件的`meun`中注明一个behavior 
 
 
 ```xml
@@ -384,7 +377,7 @@ NavigationView.OnNavigationItemSelectedListener onNavigationItemSelectedListener
 
 * 运行效果
 
-![](http://paynnyvep.bkt.clouddn.com/device-2018-07-05-103705.png)  ![](http://paynnyvep.bkt.clouddn.com/15307584630889.gif)
+![device-2018-07-05-103705](http://paynnyvep.bkt.clouddn.com/1device-2018-07-05-103705.png)![15307584630889_2](http://paynnyvep.bkt.clouddn.com/15307584630889_2-1.gif)
 
 ##  改变图标的颜色
 
@@ -404,9 +397,9 @@ NavigationView.OnNavigationItemSelectedListener onNavigationItemSelectedListener
 
 ok看下现在的效果:
 
-![](http://paynnyvep.bkt.clouddn.com/device-2018-07-05-105127.png)
+![device-2018-07-05-105127](http://paynnyvep.bkt.clouddn.com/1device-2018-07-05-105127-1.png)
 
-我们发现`首页` 旁边的图标变成了黑色.这并不是我们想要的.
+5我们发现`首页` 旁边的图标变成了黑色.这并不是我们想要的.
 
 我们怎么去更改Icon的颜色呢,有两种方法:
 
@@ -440,7 +433,7 @@ ok看下现在的效果:
 
 运行效果如下:
 
-![](http://paynnyvep.bkt.clouddn.com/device-2018-07-05-110042.png)
+![device-2018-07-05-110042](http://paynnyvep.bkt.clouddn.com/1device-2018-07-05-110042.png)
 
 我们可以看到所有的Icon的图片颜色全部换成了统一的蓝色.但是首页旁边的Icon仍不是我们想要的图标颜色.这就得需要第二种方法了.
 
@@ -535,7 +528,7 @@ public class MainActivity extends BaseActivity {
 
 运行效果:
 
-![](http://paynnyvep.bkt.clouddn.com/device-2018-07-05-110546.png)
+![device-2018-07-05-110546](http://paynnyvep.bkt.clouddn.com/1device-2018-07-05-110546.png)
 
 可以看到,这个效果就是我们想要的~
 
@@ -574,7 +567,7 @@ public class MainActivity extends BaseActivity {
 
 效果如下:
 
-![](http://paynnyvep.bkt.clouddn.com/device-2018-07-05-111309.png)
+![device-2018-07-05-111309](http://paynnyvep.bkt.clouddn.com/1device-2018-07-05-111309.png)
 
 
 ## 给Item之间增加分割线
@@ -624,14 +617,13 @@ public class MainActivity extends BaseActivity {
 
 运行效果
 
-![](http://paynnyvep.bkt.clouddn.com/device-2018-07-05-111851.png)
+![device-2018-07-05-111851](http://paynnyvep.bkt.clouddn.com/1device-2018-07-05-111851.png)
 
 
 ## 怎么实现Toolbar被遮挡的侧滑抽屉效果
 我们常见的应用,像网易云音乐,QQ等都是Toolbar被遮挡的侧滑效果.
 
-![](http://paynnyvep.bkt.clouddn.com/device-2018-07-05-113031-1.png)
-![](http://paynnyvep.bkt.clouddn.com/device-2018-07-05-113158-1.png)
+![device-2018-07-05-113031-1](http://paynnyvep.bkt.clouddn.com/1device-2018-07-05-113031-1.png)![device-2018-07-05-113158-1](http://paynnyvep.bkt.clouddn.com/1device-2018-07-05-113158-1.png)
 
 我们实现这种效果就得让`DrawerLayout`包含在`Toolbar`外面
 
@@ -776,7 +768,7 @@ public class DrawerLayoutActivity extends AppCompatActivity {
 
 运行效果:
 
-![](http://paynnyvep.bkt.clouddn.com/15308425514883.gif)
+![15308425514883_2](http://paynnyvep.bkt.clouddn.com/15308425514883_2.gif)
 
 # 代码
 
