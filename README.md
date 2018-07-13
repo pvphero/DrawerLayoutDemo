@@ -17,6 +17,7 @@
 ## 创建BaseActivity及相关XML文件
 - `activity_base.xml`
 
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
